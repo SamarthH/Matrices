@@ -52,7 +52,8 @@ matrix_t* adjoint(const matrix_t* to_find);
 matrix_t* inverse(const matrix_t* to_find);
 
 void solve_linear(const matrix_t* coeff, double* sol, const double* equal);
-// To use this, give coefficient matrix, matrix in which solutions must be stored, array of equalities and number of variables.
-// equality means a[i]*var[0] + b[i]*var[1] + c[i]*var[2] + ... = equal[i]
+// To use this, give coefficient matrix, matrix in which solutions must be stored and array of equalities respectively.
+// equality means coeff->mat[i][0] * sol[0] + coeff->mat[i][1] * sol[1] + ... == equal[i] 
+//The number of variables is taken to be equal to the number of columns in the coeff matrix
 
 #endif
