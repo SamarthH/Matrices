@@ -14,6 +14,7 @@ This library allows the program to perform some common matrix operations.
 - Compute the determinant
 
 ## Usage
+There are no external dependencies. This only uses standard C libraries.
 Just include the 'matrices.h' file as:
 ```c
 #include "matrices.h"
